@@ -58,7 +58,7 @@
 
   <!-- Preload Critical Above-The-Fold Hero Background -->
   <link rel="preload" as="image" href="assets/hero-bg(1).webp" type="image/webp" />
-  <link rel="stylesheet" href="style.css?v=4.1" />
+  <link rel="stylesheet" href="style.css?v=4.2" />
 </head>
 <body class="bg-ivory-100 text-charcoal font-sans antialiased overflow-x-hidden">
 
@@ -66,7 +66,7 @@
   <div id="door-overlay" class="door-overlay cursor-pointer" onclick="openRoyalDoor()">
     <!-- Background Video -->
     <video id="envelope-video" autoplay muted playsinline preload="auto" class="absolute inset-0 w-full h-full object-cover object-center z-0">
-      <source src="assets/envolp-open.mp4" type="video/mp4" />
+      <source src="assets/intro-final.mp4" type="video/mp4" />
     </video>
     <script>
       (function() {
@@ -392,155 +392,110 @@
     </div>
   </section>
 
-  <!-- EVENTS SCHEDULE SECTION - MINIMALIST WHITE BACKGROUND WITH CORNER FLOWERS -->
+  <!-- EVENTS SCHEDULE SECTION - 2 SACRED CEREMONIES (IMAGE-OVERLAY LUXURY CARDS) -->
   <section id="events" class="py-20 px-4 sm:px-8 bg-white relative z-10 border-t border-b border-[#E5E5EA] overflow-hidden">
     <!-- Corner Floral Decorations -->
     <img src="assets/flower.webp" alt="" class="absolute top-0 left-0 w-28 sm:w-40 md:w-48 opacity-90 pointer-events-none select-none z-0 transform scale-y-[-1]" loading="lazy" decoding="async" />
     <img src="assets/flower.webp" alt="" class="absolute bottom-0 right-0 w-28 sm:w-40 md:w-48 opacity-90 pointer-events-none select-none z-0 transform scale-x-[-1]" loading="lazy" decoding="async" />
     
-    <div class="max-w-4xl mx-auto space-y-12 relative z-10">
+    <div class="max-w-3xl mx-auto space-y-10 relative z-10">
       
-      <!-- Section Title Header with Soft Medium Cursive Calligraphy Font -->
+      <!-- Section Title Header -->
       <div class="text-center space-y-2 scroll-reveal">
         <span class="font-sans text-[10px] tracking-[0.3em] text-[#C5A059] font-bold uppercase block">THE ITINERARY</span>
         <h2 data-trans="eventsTitle" class="font-cursive text-5xl sm:text-6xl text-black font-medium tracking-wide">Sacred Ceremonies</h2>
         <div class="w-12 h-[1px] bg-royal-gold/45 mx-auto mt-2"></div>
       </div>
 
-      <!-- Staggered Timeline Layout of 5 Traditional Wedding Cards -->
-      <div class="relative flex flex-col gap-6 md:gap-12 py-4">
-        <!-- Central vertical timeline line (Visible on all viewports) -->
-        <div class="absolute left-1/2 -translate-x-1/2 top-4 bottom-4 w-[1px] bg-royal-gold/25 z-0"></div>
+      <!-- 2 Sacred Ceremony Feature Cards (Exact Reference Match) -->
+      <div class="flex flex-col gap-6 sm:gap-8 max-w-2xl mx-auto">
         
-        <!-- 1. Shubh Aarambh & Haldi (Left Side) -->
-        <div class="relative w-[45%] self-start rounded-2xl bg-gradient-to-b from-white to-[#FCFBF7] border border-[#FAF0D7] shadow-[0_10px_35px_rgba(197,160,89,0.07)] hover:scale-[1.02] hover:border-[#C5A059]/60 hover:shadow-[0_20px_45px_rgba(197,160,89,0.14)] transition-all duration-300 p-3.5 sm:p-6 md:p-8 scroll-reveal z-10">
-          <div class="absolute top-1/2 -translate-y-1/2 right-[-18px] md:right-[-24px] w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-royal-gold border border-white z-20"></div>
+        <!-- Function 1: Baraat Swagat & Milni -->
+        <div class="relative rounded-3xl overflow-hidden border border-royal-gold/30 shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:scale-[1.015] hover:border-royal-gold/60 transition-all duration-500 scroll-reveal min-h-[230px] sm:min-h-[260px] flex flex-col justify-end p-6 sm:p-8">
+          <!-- Background Image -->
+          <img src="assets/groom.webp" alt="Baraat Swagat" class="absolute inset-0 w-full h-full object-cover object-top filter brightness-[0.88]" loading="lazy" decoding="async" />
+          
+          <!-- Cinematic Dark Gradient Overlay for Maximum Legibility -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/65 to-black/35 pointer-events-none"></div>
 
-          <div class="space-y-2 md:space-y-3">
-            <div class="flex items-center gap-2">
-              <span class="font-sans text-[7.5px] sm:text-[8px] uppercase tracking-[0.2em] text-royal-gold font-bold">✦ SHUBH AARAMBH ✦</span>
+          <!-- Card Content -->
+          <div class="relative z-10 space-y-2.5">
+            <!-- Pill Badge -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#0D2320]/85 border border-royal-gold/50 backdrop-blur-md shadow-sm">
+              <span class="text-royal-gold text-[9px] font-serif">✦</span>
+              <span class="font-sans text-[8px] sm:text-[9.5px] uppercase tracking-[0.2em] text-[#FAF0D7] font-bold">SHUBH BARAAT • DAY 01</span>
             </div>
-            <h3 class="font-serif text-base sm:text-lg md:text-2xl font-light text-black tracking-wide leading-tight">Shubh Aarambh &amp; Haldi</h3>
-            <p class="font-serif italic text-[10px] sm:text-xs text-charcoal-muted leading-relaxed mt-0.5">Traditional turmeric blessings and festive joy to begin our sacred wedding journey.</p>
-            
-            <div class="h-[1px] bg-gradient-to-r from-transparent via-[#C5A059]/30 to-transparent my-2 md:my-3"></div>
-            
-            <div class="space-y-1 text-[9px] sm:text-xs text-charcoal/80 font-sans tracking-wide">
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHEN</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs">Nov 30 • 11:00 AM</span>
+
+            <!-- Title -->
+            <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-white tracking-wide leading-tight drop-shadow-sm">
+              Baraat Swagat &amp; Milni
+            </h3>
+
+            <!-- Poetic Subtitle / Quote -->
+            <p class="font-serif italic text-xs sm:text-sm text-gray-200 leading-relaxed max-w-lg">
+              &quot;Grand welcome of the groom's royal procession with traditional music, garlands, and warm milni greetings.&quot;
+            </p>
+
+            <!-- Divider Flourish -->
+            <div class="h-[1px] bg-gradient-to-r from-royal-gold/40 via-white/20 to-transparent my-2"></div>
+
+            <!-- Details: When & Where with Icons -->
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs sm:text-[13px] text-gray-200 font-sans tracking-wide pt-0.5">
+              <div class="inline-flex items-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4 text-royal-gold flex-shrink-0"></i>
+                <span class="font-medium text-white">Monday, Nov 30 • 07:00 PM</span>
               </div>
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHERE</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs truncate max-w-[70%]">Home</span>
+              <div class="inline-flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-royal-gold flex-shrink-0"></i>
+                <span class="font-medium text-white">KD Jalsa Banquet Hall, Kanpur</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 2. Baraat Swagat & Milni (Right Side) -->
-        <div class="relative w-[45%] self-end rounded-2xl bg-gradient-to-b from-white to-[#FCFBF7] border border-[#FAF0D7] shadow-[0_10px_35px_rgba(197,160,89,0.07)] hover:scale-[1.02] hover:border-[#C5A059]/60 hover:shadow-[0_20px_45px_rgba(197,160,89,0.14)] transition-all duration-300 p-3.5 sm:p-6 md:p-8 scroll-reveal z-10">
-          <div class="absolute top-1/2 -translate-y-1/2 left-[-18px] md:left-[-24px] w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-royal-gold border border-white z-20"></div>
+        <!-- Function 2: Vidai Ceremony -->
+        <div class="relative rounded-3xl overflow-hidden border border-royal-gold/30 shadow-[0_12px_40px_rgba(0,0,0,0.12)] hover:scale-[1.015] hover:border-royal-gold/60 transition-all duration-500 scroll-reveal min-h-[230px] sm:min-h-[260px] flex flex-col justify-end p-6 sm:p-8">
+          <!-- Background Image -->
+          <img src="assets/vidai.webp" alt="Vidai Ceremony" class="absolute inset-0 w-full h-full object-cover object-center filter brightness-[0.88]" loading="lazy" decoding="async" />
+          
+          <!-- Cinematic Dark Gradient Overlay for Maximum Legibility -->
+          <div class="absolute inset-0 bg-gradient-to-t from-black/95 via-black/65 to-black/35 pointer-events-none"></div>
 
-          <div class="space-y-2 md:space-y-3">
-            <div class="flex items-center gap-2">
-              <span class="font-sans text-[7.5px] sm:text-[8px] uppercase tracking-[0.2em] text-royal-gold font-bold">✦ BARAAT SWAGAT &amp; MILNI ✦</span>
+          <!-- Card Content -->
+          <div class="relative z-10 space-y-2.5">
+            <!-- Pill Badge -->
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#2A0E15]/85 border border-royal-gold/50 backdrop-blur-md shadow-sm">
+              <span class="text-royal-gold text-[9px] font-serif">✦</span>
+              <span class="font-sans text-[8px] sm:text-[9.5px] uppercase tracking-[0.2em] text-[#FAF0D7] font-bold">SHUBH VIDAI • DAY 02</span>
             </div>
-            <h3 class="font-serif text-base sm:text-lg md:text-2xl font-light text-black tracking-wide leading-tight">Baraat Swagat &amp; Milni</h3>
-            <p class="font-serif italic text-[10px] sm:text-xs text-charcoal-muted leading-relaxed mt-0.5">Grand welcome of the groom's procession with traditional garlands, music, and royal milni.</p>
-            
-            <div class="h-[1px] bg-gradient-to-r from-transparent via-[#C5A059]/30 to-transparent my-2 md:my-3"></div>
-            
-            <div class="space-y-1 text-[9px] sm:text-xs text-charcoal/80 font-sans tracking-wide">
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHEN</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs">Nov 30 • 07:00 PM</span>
+
+            <!-- Title -->
+            <h3 class="font-serif text-2xl sm:text-3xl md:text-4xl font-normal text-white tracking-wide leading-tight drop-shadow-sm">
+              Vidai Ceremony
+            </h3>
+
+            <!-- Poetic Subtitle / Quote -->
+            <p class="font-serif italic text-xs sm:text-sm text-gray-200 leading-relaxed max-w-lg">
+              &quot;An emotional and auspicious farewell as our beloved bride steps into her beautiful new home and eternal beginnings.&quot;
+            </p>
+
+            <!-- Divider Flourish -->
+            <div class="h-[1px] bg-gradient-to-r from-royal-gold/40 via-white/20 to-transparent my-2"></div>
+
+            <!-- Details: When & Where with Icons -->
+            <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 text-xs sm:text-[13px] text-gray-200 font-sans tracking-wide pt-0.5">
+              <div class="inline-flex items-center gap-2">
+                <i data-lucide="calendar" class="w-4 h-4 text-royal-gold flex-shrink-0"></i>
+                <span class="font-medium text-white">Tuesday, Dec 01 • 06:00 AM</span>
               </div>
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHERE</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs truncate max-w-[70%]">KD Jalsa Banquet</span>
+              <div class="inline-flex items-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-royal-gold flex-shrink-0"></i>
+                <span class="font-medium text-white">KD Jalsa Banquet Hall, Kanpur</span>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- 3. Jaimala & Royal Feast (Left Side) -->
-        <div class="relative w-[45%] self-start rounded-2xl bg-gradient-to-b from-white to-[#FCFBF7] border border-[#FAF0D7] shadow-[0_10px_35px_rgba(197,160,89,0.07)] hover:scale-[1.02] hover:border-[#C5A059]/60 hover:shadow-[0_20px_45px_rgba(197,160,89,0.14)] transition-all duration-300 p-3.5 sm:p-6 md:p-8 scroll-reveal z-10">
-          <div class="absolute top-1/2 -translate-y-1/2 right-[-18px] md:right-[-24px] w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-royal-gold border border-white z-20"></div>
-
-          <div class="space-y-2 md:space-y-3">
-            <div class="flex items-center gap-2">
-              <span class="font-sans text-[7.5px] sm:text-[8px] uppercase tracking-[0.2em] text-royal-gold font-bold">✦ JAIMALA &amp; FEAST ✦</span>
-            </div>
-            <h3 class="font-serif text-base sm:text-lg md:text-2xl font-light text-black tracking-wide leading-tight">Jaimala &amp; Royal Dinner</h3>
-            <p class="font-serif italic text-[10px] sm:text-xs text-charcoal-muted leading-relaxed mt-0.5">The divine exchange of floral garlands followed by celebration and a lavish royal banquet.</p>
-            
-            <div class="h-[1px] bg-gradient-to-r from-transparent via-[#C5A059]/30 to-transparent my-2 md:my-3"></div>
-            
-            <div class="space-y-1 text-[9px] sm:text-xs text-charcoal/80 font-sans tracking-wide">
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHEN</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs">Nov 30 • 09:30 PM</span>
-              </div>
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHERE</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs truncate max-w-[70%]">KD Jalsa Banquet</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4. Shubh Vivah & Pheras (Right Side) -->
-        <div class="relative w-[45%] self-end rounded-2xl bg-gradient-to-b from-white to-[#FCFBF7] border border-[#FAF0D7] shadow-[0_10px_35px_rgba(197,160,89,0.07)] hover:scale-[1.02] hover:border-[#C5A059]/60 hover:shadow-[0_20px_45px_rgba(197,160,89,0.14)] transition-all duration-300 p-3.5 sm:p-6 md:p-8 scroll-reveal z-10">
-          <div class="absolute top-1/2 -translate-y-1/2 left-[-18px] md:left-[-24px] w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-royal-gold border border-white z-20"></div>
-
-          <div class="space-y-2 md:space-y-3">
-            <div class="flex items-center gap-2">
-              <span class="font-sans text-[7.5px] sm:text-[8px] uppercase tracking-[0.2em] text-royal-gold font-bold">✦ SHUBH VIVAH ✦</span>
-            </div>
-            <h3 class="font-serif text-base sm:text-lg md:text-2xl font-light text-black tracking-wide leading-tight">Shubh Vivah &amp; Pheras</h3>
-            <p class="font-serif italic text-[10px] sm:text-xs text-charcoal-muted leading-relaxed mt-0.5">The sacred wedding vows and circumambulations around the holy fire to unite for lifetimes.</p>
-            
-            <div class="h-[1px] bg-gradient-to-r from-transparent via-[#C5A059]/30 to-transparent my-2 md:my-3"></div>
-            
-            <div class="space-y-1 text-[9px] sm:text-xs text-charcoal/80 font-sans tracking-wide">
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHEN</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs">Nov 30 • 11:30 PM</span>
-              </div>
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHERE</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs truncate max-w-[70%]">Mandap, KD Jalsa</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 5. Shubh Vidai (Left Side) -->
-        <div class="relative w-[45%] self-start rounded-2xl bg-gradient-to-b from-white to-[#FCFBF7] border border-[#FAF0D7] shadow-[0_10px_35px_rgba(197,160,89,0.07)] hover:scale-[1.02] hover:border-[#C5A059]/60 hover:shadow-[0_20px_45px_rgba(197,160,89,0.14)] transition-all duration-300 p-3.5 sm:p-6 md:p-8 scroll-reveal z-10">
-          <div class="absolute top-1/2 -translate-y-1/2 right-[-18px] md:right-[-24px] w-2 h-2 md:w-2.5 md:h-2.5 rounded-full bg-royal-gold border border-white z-20"></div>
-
-          <div class="space-y-2 md:space-y-3">
-            <div class="flex items-center gap-2">
-              <span class="font-sans text-[7.5px] sm:text-[8px] uppercase tracking-[0.2em] text-royal-gold font-bold">✦ SHUBH VIDAI ✦</span>
-            </div>
-            <h3 class="font-serif text-base sm:text-lg md:text-2xl font-light text-black tracking-wide leading-tight">Vidai Ceremony</h3>
-            <p class="font-serif italic text-[10px] sm:text-xs text-charcoal-muted leading-relaxed mt-0.5">An emotional and auspicious farewell as our beloved bride steps into her beautiful new journey.</p>
-            
-            <div class="h-[1px] bg-gradient-to-r from-transparent via-[#C5A059]/30 to-transparent my-2 md:my-3"></div>
-            
-            <div class="space-y-1 text-[9px] sm:text-xs text-charcoal/80 font-sans tracking-wide">
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHEN</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs">Dec 01 • 06:00 AM</span>
-              </div>
-              <div class="flex items-center justify-between gap-1">
-                <span class="text-[7px] uppercase tracking-wider text-royal-gold font-bold">WHERE</span>
-                <span class="font-medium text-black text-[10px] sm:text-xs truncate max-w-[70%]">KD Jalsa Banquet</span>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -714,6 +669,6 @@
     </div>
   </footer>
 
-  <script src="script.js?v=4.1"></script>
+  <script src="script.js?v=4.2"></script>
 </body>
 </html>
