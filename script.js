@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Start Indian Classical Ambient Raga Music
     startIndianRagaMusic();
+    setTimeout(() => { if (window.resizeScratchCanvas) window.resizeScratchCanvas(); }, 400);
   }
 
   // Expose globally for inline HTML onclick binding
@@ -165,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
       ctx.font = `500 ${fontSize}px "Plus Jakarta Sans", sans-serif`;
       ctx.shadowColor = 'rgba(255, 255, 255, 0.85)';
       ctx.shadowBlur = 3;
-      ctx.fillText('✦   U N V E I L   T H E   C O U N T D O W N   ✦', w / 2, h / 2);
+      ctx.fillText('✦   S C R A T C H   T O   R E V E A L   ✦', w / 2, h / 2);
       ctx.shadowColor = 'transparent';
     }
 
@@ -267,6 +268,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Event Listeners for Touch & Mouse
+    window.resizeScratchCanvas = resizeScratchCanvas;
     window.addEventListener('resize', resizeScratchCanvas);
     setTimeout(resizeScratchCanvas, 100);
     if (document.fonts) {
